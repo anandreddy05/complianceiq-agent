@@ -62,10 +62,7 @@ Rules:
 @app.on_event("startup")
 async def startup():
     print("Checking knowledge base...")
-    from qdrant_client import QdrantClient as QC
-
-    check = QC(path="./qdrant_storage")
-    if not check.collection_exists("compliance_documents"):
+    if not client.collection_exists("compliance_documents"):
         print("Knowledge base empty — running ingestion...")
         run_ingest()
         print("Ingestion complete.")
