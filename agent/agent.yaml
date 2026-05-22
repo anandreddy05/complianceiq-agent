@@ -1,0 +1,19 @@
+name: complianceiq
+version: 1.0.0
+description: Enterprise compliance assistant — GDPR, DPDP, RBI, OWASP
+model:
+  preferred: claude-sonnet-4-6
+  fallback:
+    - llama-3.1-8b-instant
+skills:
+  - gdpr
+  - india-compliance
+  - url-analysis
+tools:
+  - ask_kb
+  - ask_url
+tags:
+  - compliance
+  - enterprise
+  - rag
+  - gitagent

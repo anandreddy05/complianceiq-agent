@@ -1,0 +1,16 @@
+{
+  "name": "ask_url",
+  "description": "Ask a question about a specific compliance URL",
+  "endpoint": "http://localhost:8000/ask-url",
+  "method": "POST",
+  "parameters": {
+    "query": {
+      "type": "string",
+      "description": "The question to ask about the URL content"
+    },
+    "url": {
+      "type": "string",
+      "description": "The URL of the compliance document to analyze"
+    }
+  }
+}

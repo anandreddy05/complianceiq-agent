@@ -1,0 +1,12 @@
+{
+  "name": "ask_kb",
+  "description": "Query the compliance knowledge base with a question about GDPR, DPDP, or OWASP",
+  "endpoint": "http://localhost:8000/ask",
+  "method": "POST",
+  "parameters": {
+    "query": {
+      "type": "string",
+      "description": "The compliance question to answer"
+    }
+  }
+}
